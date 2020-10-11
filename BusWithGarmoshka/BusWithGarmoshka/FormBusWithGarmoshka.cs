@@ -12,7 +12,7 @@ namespace BusWithGarmoshka
 {
     public partial class FormBusWithGarmoshka : Form
     {
-        private BusWithGarmoshka bus;
+        private ITransport bus;
 
         public FormBusWithGarmoshka()
         {
@@ -30,7 +30,7 @@ namespace BusWithGarmoshka
         private void buttonCreate_Click(object sender, EventArgs e)
         {
             Random rnd = new Random();
-            bus = new BusWithGarmoshka(rnd.Next(100, 300), rnd.Next(1000, 2000), Color.Blue, Color.Yellow, true, true);
+            bus = new Bus(rnd.Next(100, 300), rnd.Next(1000, 2000), Color.Blue);
             bus.SetPosition(rnd.Next(10, 100), rnd.Next(10, 100), pictureBoxBuses.Width, pictureBoxBuses.Height);
             Draw();
         }
@@ -54,6 +54,14 @@ namespace BusWithGarmoshka
                     bus.MoveTransport(Direction.Right);
                     break;
             }
+            Draw();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Random rnd = new Random();
+            bus = new BusWithGarmoshka(rnd.Next(100, 300), rnd.Next(1000, 2000), Color.Blue, Color.Yellow, true, true);
+            bus.SetPosition(rnd.Next(10, 100), rnd.Next(10, 100), pictureBoxBuses.Width, pictureBoxBuses.Height);
             Draw();
         }
     }
