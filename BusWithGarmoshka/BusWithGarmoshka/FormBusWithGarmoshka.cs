@@ -27,7 +27,7 @@ namespace BusWithGarmoshka
             pictureBoxBuses.Image = bmp;
         }
 
-        private void buttonCreate_Click(object sender, EventArgs e)
+        private void buttonCreateBus_Click(object sender, EventArgs e)
         {
             Random rnd = new Random();
             bus = new Bus(rnd.Next(100, 300), rnd.Next(1000, 2000), Color.Blue);
@@ -39,25 +39,28 @@ namespace BusWithGarmoshka
         {
             //получаем имя кнопки
             string name = (sender as Button).Name;
-            switch (name)
+            if (bus != null)
             {
-                case "buttonUp":
-                    bus.MoveTransport(Direction.Up);
-                    break;
-                case "buttonDown":
-                    bus.MoveTransport(Direction.Down);
-                    break;
-                case "buttonLeft":
-                    bus.MoveTransport(Direction.Left);
-                    break;
-                case "buttonRight":
-                    bus.MoveTransport(Direction.Right);
-                    break;
+                switch (name)
+                {
+                    case "buttonUp":
+                        bus.MoveTransport(Direction.Up);
+                        break;
+                    case "buttonDown":
+                        bus.MoveTransport(Direction.Down);
+                        break;
+                    case "buttonLeft":
+                        bus.MoveTransport(Direction.Left);
+                        break;
+                    case "buttonRight":
+                        bus.MoveTransport(Direction.Right);
+                        break;
+                }
+                Draw();
             }
-            Draw();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void buttonCreateBusWithGarmoshka_Click(object sender, EventArgs e)
         {
             Random rnd = new Random();
             bus = new BusWithGarmoshka(rnd.Next(100, 300), rnd.Next(1000, 2000), Color.Blue, Color.Yellow, true, true);
