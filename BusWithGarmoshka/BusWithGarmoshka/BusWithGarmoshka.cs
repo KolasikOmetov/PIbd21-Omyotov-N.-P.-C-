@@ -40,6 +40,8 @@ namespace BusWithGarmoshka
 
                 g.FillRectangle(door, _startPosX + 195, _startPosY + 5, 25, 40);
 
+                g.FillRectangle(door, _startPosX + 25, _startPosY + 5, 25, 40);
+
                 if (BackDoors)
                 {
                     g.FillRectangle(door, _startPosX + 270, _startPosY + 5, 25, 40);

@@ -19,11 +19,17 @@ namespace BusWithGarmoshka
             InitializeComponent();
         }
 
+        public void SetBus(ITransport bus)
+        {
+            this.bus = bus;
+            Draw();
+        }
+
         private void Draw()
         {
             Bitmap bmp = new Bitmap(pictureBoxBuses.Width, pictureBoxBuses.Height);
             Graphics gr = Graphics.FromImage(bmp);
-            bus.DrawTransport(gr);
+            bus?.DrawTransport(gr);
             pictureBoxBuses.Image = bmp;
         }
 
@@ -35,36 +41,33 @@ namespace BusWithGarmoshka
             Draw();
         }
 
-        private void buttonMove_Click(object sender, EventArgs e)
-        {
-            //получаем имя кнопки
-            string name = (sender as Button).Name;
-            if (bus != null)
-            {
-                switch (name)
-                {
-                    case "buttonUp":
-                        bus.MoveTransport(Direction.Up);
-                        break;
-                    case "buttonDown":
-                        bus.MoveTransport(Direction.Down);
-                        break;
-                    case "buttonLeft":
-                        bus.MoveTransport(Direction.Left);
-                        break;
-                    case "buttonRight":
-                        bus.MoveTransport(Direction.Right);
-                        break;
-                }
-                Draw();
-            }
-        }
-
         private void buttonCreateBusWithGarmoshka_Click(object sender, EventArgs e)
         {
             Random rnd = new Random();
             bus = new BusWithGarmoshka(rnd.Next(100, 300), rnd.Next(1000, 2000), Color.Blue, Color.Yellow, true, true);
             bus.SetPosition(rnd.Next(10, 100), rnd.Next(10, 100), pictureBoxBuses.Width, pictureBoxBuses.Height);
+            Draw();
+        }
+
+        private void buttonMove_Click(object sender, EventArgs e)
+        {
+            //получаем имя кнопки
+            string name = (sender as Button).Name;
+            switch (name)
+            {
+                case "buttonUp":
+                    bus?.MoveTransport(Direction.Up);
+                    break;
+                case "buttonDown":
+                    bus?.MoveTransport(Direction.Down);
+                    break;
+                case "buttonLeft":
+                    bus?.MoveTransport(Direction.Left);
+                    break;
+                case "buttonRight":
+                    bus?.MoveTransport(Direction.Right);
+                    break;
+            }
             Draw();
         }
     }
