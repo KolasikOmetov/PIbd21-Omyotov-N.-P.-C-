@@ -40,7 +40,7 @@ namespace BusWithGarmoshka
                 }
                 else
                 {
-                    MessageBox.Show("Парковка переполнена");
+                    MessageBox.Show("Автовокзал переполнен");
                 }
             }
         }
@@ -60,7 +60,7 @@ namespace BusWithGarmoshka
                     }
                     else
                     {
-                        MessageBox.Show("Парковка переполнена");
+                        MessageBox.Show("Автовокзал переполнен");
                     }
                 }
             }

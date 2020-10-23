@@ -115,7 +115,7 @@
             this.Controls.Add(this.buttonParkBus);
             this.Controls.Add(this.pictureBoxStation);
             this.Name = "FormStation";
-            this.Text = "Парковка";
+            this.Text = "Автовокзал";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxStation)).EndInit();
             this.groupBoxTakeBus.ResumeLayout(false);
             this.groupBoxTakeBus.PerformLayout();
