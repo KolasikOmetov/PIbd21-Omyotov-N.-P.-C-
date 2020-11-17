@@ -29,8 +29,7 @@
         private void InitializeComponent()
         {
 			this.pictureBoxStation = new System.Windows.Forms.PictureBox();
-			this.buttonParkBus = new System.Windows.Forms.Button();
-			this.buttonParkBusWithGarmoshka = new System.Windows.Forms.Button();
+			this.buttonAddBus = new System.Windows.Forms.Button();
 			this.groupBoxTakeBus = new System.Windows.Forms.GroupBox();
 			this.buttonTake = new System.Windows.Forms.Button();
 			this.maskedTextBoxForBus = new System.Windows.Forms.MaskedTextBox();
@@ -53,27 +52,16 @@
 			this.pictureBoxStation.TabIndex = 0;
 			this.pictureBoxStation.TabStop = false;
 			// 
-			// buttonParkBus
+			// buttonAddBus
 			// 
-			this.buttonParkBus.Location = new System.Drawing.Point(717, 221);
-			this.buttonParkBus.Margin = new System.Windows.Forms.Padding(2);
-			this.buttonParkBus.Name = "buttonParkBus";
-			this.buttonParkBus.Size = new System.Drawing.Size(127, 41);
-			this.buttonParkBus.TabIndex = 1;
-			this.buttonParkBus.Text = "Припарковать автобус";
-			this.buttonParkBus.UseVisualStyleBackColor = true;
-			this.buttonParkBus.Click += new System.EventHandler(this.buttonParkBus_Click);
-			// 
-			// buttonParkBusWithGarmoshka
-			// 
-			this.buttonParkBusWithGarmoshka.Location = new System.Drawing.Point(717, 272);
-			this.buttonParkBusWithGarmoshka.Margin = new System.Windows.Forms.Padding(2);
-			this.buttonParkBusWithGarmoshka.Name = "buttonParkBusWithGarmoshka";
-			this.buttonParkBusWithGarmoshka.Size = new System.Drawing.Size(127, 41);
-			this.buttonParkBusWithGarmoshka.TabIndex = 1;
-			this.buttonParkBusWithGarmoshka.Text = "Припарковать автобус с гармошкой";
-			this.buttonParkBusWithGarmoshka.UseVisualStyleBackColor = true;
-			this.buttonParkBusWithGarmoshka.Click += new System.EventHandler(this.buttonParkBusWithGarmoshka_Click);
+			this.buttonAddBus.Location = new System.Drawing.Point(717, 239);
+			this.buttonAddBus.Margin = new System.Windows.Forms.Padding(2);
+			this.buttonAddBus.Name = "buttonAddBus";
+			this.buttonAddBus.Size = new System.Drawing.Size(127, 41);
+			this.buttonAddBus.TabIndex = 1;
+			this.buttonAddBus.Text = "Добавить автобус";
+			this.buttonAddBus.UseVisualStyleBackColor = true;
+			this.buttonAddBus.Click += new System.EventHandler(this.buttonAddBus_Click);
 			// 
 			// groupBoxTakeBus
 			// 
@@ -174,8 +162,7 @@
 			this.Controls.Add(this.textBoxNameOfStation);
 			this.Controls.Add(this.labelStations);
 			this.Controls.Add(this.groupBoxTakeBus);
-			this.Controls.Add(this.buttonParkBusWithGarmoshka);
-			this.Controls.Add(this.buttonParkBus);
+			this.Controls.Add(this.buttonAddBus);
 			this.Controls.Add(this.pictureBoxStation);
 			this.Margin = new System.Windows.Forms.Padding(2);
 			this.Name = "FormStation";
@@ -191,8 +178,7 @@
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBoxStation;
-        private System.Windows.Forms.Button buttonParkBus;
-        private System.Windows.Forms.Button buttonParkBusWithGarmoshka;
+        private System.Windows.Forms.Button buttonAddBus;
         private System.Windows.Forms.GroupBox groupBoxTakeBus;
         private System.Windows.Forms.Label labelPlace;
         private System.Windows.Forms.MaskedTextBox maskedTextBoxForBus;

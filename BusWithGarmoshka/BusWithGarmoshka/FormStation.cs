@@ -62,22 +62,24 @@ namespace BusWithGarmoshka
 			ReloadLevels();
 		}
 
-		private void buttonParkBus_Click(object sender, EventArgs e)
+		private void buttonAddBus_Click(object sender, EventArgs e)
 		{
-			if (listBoxOfStations.SelectedIndex > -1)
+			var formCarConfig = new FormBusConfig();
+			formCarConfig.AddEvent(AddBus);
+			formCarConfig.Show();
+		}
+
+		private void AddBus(Vehicle bus)
+		{
+			if (bus != null && listBoxOfStations.SelectedIndex > -1)
 			{
-				ColorDialog dialog = new ColorDialog();
-				if (dialog.ShowDialog() == DialogResult.OK)
+				if ((stationCollection[listBoxOfStations.SelectedItem.ToString()]) + bus)
 				{
-					var bus = new Bus(100, 1000, dialog.Color);
-					if (stationCollection[listBoxOfStations.SelectedItem.ToString()] + bus)
-					{
-						Draw();
-					}
-					else
-					{
-						MessageBox.Show("Автовокзал переполнен");
-					}
+					Draw();
+				}
+				else
+				{
+					MessageBox.Show("Автобус не удалось поставить");
 				}
 			}
 		}
@@ -90,30 +92,6 @@ namespace BusWithGarmoshka
 				{
 					stationCollection.DelStation(listBoxOfStations.SelectedItem.ToString());
 					ReloadLevels();
-				}
-			}
-		}
-
-		private void buttonParkBusWithGarmoshka_Click(object sender, EventArgs e)
-		{
-			if (listBoxOfStations.SelectedIndex > -1)
-			{
-				ColorDialog dialog = new ColorDialog();
-				if (dialog.ShowDialog() == DialogResult.OK)
-				{
-					ColorDialog dialogDop = new ColorDialog();
-					if (dialogDop.ShowDialog() == DialogResult.OK)
-					{
-						var bus = new BusWithGarmoshka(100, 1000, dialog.Color, dialogDop.Color, true, true);
-						if (stationCollection[listBoxOfStations.SelectedItem.ToString()] + bus)
-						{
-							Draw();
-						}
-						else
-						{
-							MessageBox.Show("Автовокзал переполнен");
-						}
-					}
 				}
 			}
 		}

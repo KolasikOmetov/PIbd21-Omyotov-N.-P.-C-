@@ -27,6 +27,7 @@ namespace BusWithGarmoshka
             Brush door = new SolidBrush(DopColor);
             Brush cusov = new SolidBrush(MainColor);
             Brush pen = new SolidBrush(Color.Black);
+            g.FillRectangle(door, _startPosX + 25, _startPosY + 5, 25, 40);
             if (BackDoors)
             {
                 g.FillRectangle(door, _startPosX + 100, _startPosY + 5, 25, 40);
@@ -50,6 +51,11 @@ namespace BusWithGarmoshka
                 g.FillEllipse(pen, _startPosX + 175, _startPosY + 40, 20, 20);
                 g.FillEllipse(pen, _startPosX + 290, _startPosY + 40, 20, 20);
             }
+        }
+
+        public void SetDopColor(Color color)
+        {
+            DopColor = color;
         }
     }
 

@@ -6,11 +6,9 @@ using System.Windows.Forms;
 
 namespace BusWithGarmoshka
 {
+	public delegate void Action<Vehicle>(Vehicle bus);
 	static class Program
 	{
-		/// <summary>
-		/// Главная точка входа для приложения.
-		/// </summary>
 		[STAThread]
 		static void Main()
 		{
