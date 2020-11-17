@@ -1,4 +1,5 @@
-﻿using System.Drawing;
+﻿using System;
+using System.Drawing;
 
 namespace BusWithGarmoshka
 {
@@ -6,6 +7,7 @@ namespace BusWithGarmoshka
     {
         protected readonly int busWidth = 150;
         protected readonly int busHeight = 60;
+        protected readonly char separator = ';';
         public Bus(int maxSpeed, float weight, Color mainColor)
         {
             MaxSpeed = maxSpeed;
@@ -21,6 +23,18 @@ namespace BusWithGarmoshka
             this.busWidth = busWidth;
             this.busHeight = busHeight;
         }
+
+        public Bus(string info)
+        {
+            string[] strs = info.Split(separator);
+            if (strs.Length == 3)
+            {
+                MaxSpeed = Convert.ToInt32(strs[0]);
+                Weight = Convert.ToInt32(strs[1]);
+                MainColor = Color.FromName(strs[2]);
+            }
+        }
+
         public override void MoveTransport(Direction direction)
         {
             float step = MaxSpeed * 100 / Weight;
@@ -68,6 +82,11 @@ namespace BusWithGarmoshka
             Brush pen = new SolidBrush(Color.Black);
             g.FillEllipse(pen, _startPosX + 5, _startPosY + 40, 20, 20);
             g.FillEllipse(pen, _startPosX + 120, _startPosY + 40, 20, 20);
+        }
+
+        public override string ToString()
+        {
+            return $"{MaxSpeed}{separator}{Weight}{separator}{MainColor.Name}";
         }
     }
 }

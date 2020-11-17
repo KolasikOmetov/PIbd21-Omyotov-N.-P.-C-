@@ -163,6 +163,7 @@
 			this.checkBoxGarmoshka.TabIndex = 1;
 			this.checkBoxGarmoshka.Text = "Гармошка";
 			this.checkBoxGarmoshka.UseVisualStyleBackColor = true;
+			this.checkBoxGarmoshka.CheckedChanged += new System.EventHandler(this.checkBoxGarmoshka_CheckedChanged);
 			// 
 			// checkBoxBackDoors
 			// 
@@ -173,6 +174,7 @@
 			this.checkBoxBackDoors.TabIndex = 1;
 			this.checkBoxBackDoors.Text = "Задние двери";
 			this.checkBoxBackDoors.UseVisualStyleBackColor = true;
+			this.checkBoxBackDoors.CheckedChanged += new System.EventHandler(this.checkBoxBackDoors_CheckedChanged);
 			// 
 			// labelWeight
 			// 
