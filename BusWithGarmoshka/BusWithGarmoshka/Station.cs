@@ -29,8 +29,9 @@ namespace BusWithGarmoshka
 
         public static bool operator +(Station<T> p, T bus)
         {
-            if (p._places.Count >= p._maxCount) {
-                return false; 
+            if (p._places.Count >= p._maxCount)
+            {
+                throw new StationOverflowException();
             }
 
             p._places.Add(bus);
@@ -40,8 +41,9 @@ namespace BusWithGarmoshka
 
         public static T operator -(Station<T> p, int index)
         {
-            if (index < -1 || index >= p._places.Count) { 
-                return null; 
+            if (index < 0 || index >= p._places.Count)
+            {
+                throw new StationNotFoundException(index);
             }
 
             T bus = p._places[index];
@@ -56,7 +58,7 @@ namespace BusWithGarmoshka
             DrawMarking(g);
             for (int i = 0; i < _places.Count; ++i)
             {
-                _places[i].SetPosition(5 + i / 5 * _placeSizeWidth + 5, i % 5 * _placeSizeHeight + 15, pictureWidth, pictureHeight); _places[i].DrawTransport(g);
+                _places[i].SetPosition(5 + i / rows * _placeSizeWidth + 5, i % rows * _placeSizeHeight + 15, pictureWidth, pictureHeight); _places[i].DrawTransport(g);
             }
         }
 

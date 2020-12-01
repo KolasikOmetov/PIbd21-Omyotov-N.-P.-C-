@@ -55,7 +55,7 @@ namespace BusWithGarmoshka
 
         }
 
-        public bool SaveData(string filename)
+        public void SaveData(string filename)
         {
             if (File.Exists(filename))
             {
@@ -90,14 +90,13 @@ namespace BusWithGarmoshka
 
                 }
             }
-            return true;
         }
 
-        public bool LoadData(string filename)
+        public void LoadData(string filename)
         {
             if (!File.Exists(filename))
             {
-                return false;
+                throw new FileNotFoundException();
             }
             using (StreamReader sr = new StreamReader(filename))
             {
@@ -119,7 +118,7 @@ namespace BusWithGarmoshka
                         else
                         {
                             //если нет такой записи, то это не те данные
-                            return false;
+                            throw new FormatException("Неверный формат файла");
                         }
                     }
                     else
@@ -146,12 +145,11 @@ namespace BusWithGarmoshka
                         var result = stationStages[key] + bus;
                         if (!result)
                         {
-                            return false;
+                            throw new OverflowException("Не удалось загрузить автобус на парковку");
                         }
                     }
                 }
             }
-            return true;
         }
     }
 }

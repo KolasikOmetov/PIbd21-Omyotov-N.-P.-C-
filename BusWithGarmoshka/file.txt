@@ -1,0 +1,63 @@
+2020-11-30 11:54:15.2259|INFO|BusWithGarmoshka.FormStation|Перешли на парковку hjg
+2020-11-30 11:54:25.3724|INFO|BusWithGarmoshka.FormStation|Добавлен автобус 100;100;RoyalBlue;SpringGreen;True;True
+2020-11-30 11:54:40.1800|INFO|BusWithGarmoshka.FormStation|Добавлен автобус 100;100;SeaGreen
+2020-11-30 11:54:47.6370|INFO|BusWithGarmoshka.FormStation|Удалили автовокзал hjg
+2020-11-30 11:54:54.3103|INFO|BusWithGarmoshka.FormStation|Загружено из файла D:\Kolin's docs\ПИ\3й семестр\Технологии программирования (Эгов)\BusWithGarmoshka 6\S2.txt
+2020-11-30 11:54:54.3103|INFO|BusWithGarmoshka.FormStation|Перешли на парковку S1
+2020-11-30 11:54:55.7300|INFO|BusWithGarmoshka.FormStation|Перешли на парковку S2
+2020-11-30 11:54:56.5782|INFO|BusWithGarmoshka.FormStation|Перешли на парковку S1
+2020-11-30 11:54:57.3458|INFO|BusWithGarmoshka.FormStation|Перешли на парковку S2
+2020-11-30 11:54:59.6229|INFO|BusWithGarmoshka.FormStation|Удалили автовокзал S2
+2020-11-30 11:54:59.6229|INFO|BusWithGarmoshka.FormStation|Перешли на парковку S1
+2020-11-30 11:55:01.4687|INFO|BusWithGarmoshka.FormStation|Удалили автовокзал S1
+2020-11-30 11:55:11.8708|INFO|BusWithGarmoshka.FormStation|Загружено из файла D:\Kolin's docs\ПИ\3й семестр\Технологии программирования (Эгов)\BusWithGarmoshka 6\S1.txt
+2020-11-30 11:55:11.8708|INFO|BusWithGarmoshka.FormStation|Перешли на парковку S1
+2020-11-30 11:55:14.2419|INFO|BusWithGarmoshka.FormStation|Перешли на парковку S1
+2020-11-30 11:55:15.6674|INFO|BusWithGarmoshka.FormStation|Добавили автовокзал hjg
+2020-11-30 11:55:15.6674|INFO|BusWithGarmoshka.FormStation|Перешли на парковку S1
+2020-11-30 11:55:16.5862|INFO|BusWithGarmoshka.FormStation|Перешли на парковку hjg
+2020-11-30 11:55:17.2740|INFO|BusWithGarmoshka.FormStation|Перешли на парковку S1
+2020-11-30 11:55:18.0098|INFO|BusWithGarmoshka.FormStation|Перешли на парковку S1
+2020-11-30 11:55:18.5856|INFO|BusWithGarmoshka.FormStation|Перешли на парковку hjg
+2020-11-30 11:55:19.0821|INFO|BusWithGarmoshka.FormStation|Перешли на парковку S1
+2020-11-30 12:01:12.3988|INFO|BusWithGarmoshka.FormStation|Загружено из файла D:\Kolin's docs\ПИ\3й семестр\Технологии программирования (Эгов)\BusWithGarmoshka 6\S2.txt
+2020-11-30 12:01:12.4238|INFO|BusWithGarmoshka.FormStation|Перешли на парковку S1
+2020-11-30 12:01:15.8425|INFO|BusWithGarmoshka.FormStation|Перешли на парковку S2
+2020-11-30 12:02:02.8605|INFO|BusWithGarmoshka.FormStation|Добавлен автобус 100;100;White;Black;False;False
+2020-11-30 12:02:05.2509|INFO|BusWithGarmoshka.FormStation|Добавлен автобус 100;100;White;Black;False;False
+2020-11-30 12:02:08.1714|INFO|BusWithGarmoshka.FormStation|Добавлен автобус 100;100;White
+2020-11-30 12:02:12.8114|INFO|BusWithGarmoshka.FormStation|Добавлен автобус 100;100;White
+2020-11-30 12:02:15.5556|INFO|BusWithGarmoshka.FormStation|Добавлен автобус 100;100;White;Black;False;False
+2020-11-30 12:02:18.8993|INFO|BusWithGarmoshka.FormStation|Добавлен автобус 100;100;White
+2020-11-30 12:02:22.9232|INFO|BusWithGarmoshka.FormStation|Добавлен автобус 100;100;White
+2020-11-30 12:10:30.4330|INFO|BusWithGarmoshka.FormStation|Загружено из файла D:\Kolin's docs\ПИ\3й семестр\Технологии программирования (Эгов)\BusWithGarmoshka 6\S2.txt
+2020-11-30 12:10:30.4576|INFO|BusWithGarmoshka.FormStation|Перешли на парковку S1
+2020-11-30 12:10:39.7486|INFO|BusWithGarmoshka.FormStation|Добавлен автобус 100;100;White;Black;False;False
+2020-11-30 12:10:42.6352|INFO|BusWithGarmoshka.FormStation|Добавлен автобус 100;100;White
+2020-11-30 12:10:46.2267|INFO|BusWithGarmoshka.FormStation|Добавлен автобус 100;100;White
+2020-11-30 12:10:49.4995|INFO|BusWithGarmoshka.FormStation|Добавлен автобус 100;100;White
+2020-11-30 12:10:52.0035|INFO|BusWithGarmoshka.FormStation|Добавлен автобус 100;100;White
+2020-11-30 12:10:54.0514|INFO|BusWithGarmoshka.FormStation|Добавлен автобус 100;100;White;Black;False;False
+2020-12-01 08:35:08.3385|INFO|BusWithGarmoshka.FormStation|Загружено из файла D:\Kolin's docs\ПИ\3й семестр\Технологии программирования (Эгов)\BusWithGarmoshka 6\S2.txt
+2020-12-01 08:35:08.3889|INFO|BusWithGarmoshka.FormStation|Перешли на парковку S1
+2020-12-01 08:35:09.6201|INFO|BusWithGarmoshka.FormStation|Перешли на парковку S2
+2020-12-01 08:35:10.4282|INFO|BusWithGarmoshka.FormStation|Перешли на парковку S1
+2020-12-01 08:35:11.6051|INFO|BusWithGarmoshka.FormStation|Перешли на парковку S2
+2020-12-01 08:35:15.8363|INFO|BusWithGarmoshka.FormStation|Перешли на парковку S1
+2020-12-01 08:35:22.1110|INFO|BusWithGarmoshka.FormStation|Добавлен автобус 100;100;White;Black;False;False
+2020-12-01 08:35:24.8137|INFO|BusWithGarmoshka.FormStation|Добавлен автобус 100;100;White
+2020-12-01 08:35:33.4456|INFO|BusWithGarmoshka.FormStation|Добавлен автобус 100;100;RoyalBlue;Gold;True;True
+2020-12-01 08:35:45.4544|INFO|BusWithGarmoshka.FormStation|Добавлен автобус 100;100;Violet;OrangeRed;True;False
+2020-12-01 08:36:06.6053|INFO|BusWithGarmoshka.FormStation|Добавлен автобус 100;100;SeaGreen;SpringGreen;True;True
+2020-12-01 08:36:14.8456|INFO|BusWithGarmoshka.FormStation|Добавлен автобус 100;100;RoyalBlue;Black;True;True
+2020-12-01 08:37:19.2486|WARN|BusWithGarmoshka.FormStation|Переполнение: На автовокзале нет свободных мест
+2020-12-01 08:37:24.3721|INFO|BusWithGarmoshka.FormStation|Перешли на парковку S2
+2020-12-01 08:37:28.3513|WARN|BusWithGarmoshka.FormStation|Не найдено: Не найден автобус по месту 3
+2020-12-01 08:37:36.6071|INFO|BusWithGarmoshka.FormStation|Сохранено в файл D:\Kolin's docs\ПИ\3й семестр\Технологии программирования (Эгов)\BusWithGarmoshka 6\S2.txt
+2020-12-01 08:37:40.1806|INFO|BusWithGarmoshka.FormStation|Перешли на парковку S1
+2020-12-01 08:37:42.1160|INFO|BusWithGarmoshka.FormStation|Перешли на парковку S2
+2020-12-01 08:38:54.1169|WARN|BusWithGarmoshka.FormStation|Не найдено: Не найден автобус по месту 3
+2020-12-01 08:38:57.7237|INFO|BusWithGarmoshka.FormStation|Перешли на парковку S1
+2020-12-01 08:39:01.9972|WARN|BusWithGarmoshka.FormStation|Переполнение: На автовокзале нет свободных мест
+2020-12-01 08:41:18.6955|INFO|BusWithGarmoshka.FormStation|Загружено из файла D:\Kolin's docs\ПИ\3й семестр\Технологии программирования (Эгов)\BusWithGarmoshka 6\S2.txt
+2020-12-01 08:41:18.7221|INFO|BusWithGarmoshka.FormStation|Перешли на парковку S1
