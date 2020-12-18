@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace BusWithGarmoshka
 {
-    class BusWithGarmoshka : Bus
+    class BusWithGarmoshka : Bus, IEquatable<Bus>
     {
 
         public Color DopColor { private set; get; }
@@ -46,7 +46,7 @@ namespace BusWithGarmoshka
             {
                 g.FillRectangle(door, _startPosX + 100, _startPosY + 5, 25, 40);
             }
-            
+
             if (Garmoshka)
             {
                 g.FillRectangle(pen, _startPosX + 150, _startPosY, 20, 50);
@@ -76,6 +76,59 @@ namespace BusWithGarmoshka
         {
             return $"{base.ToString()}{separator}{DopColor.Name}{separator}{BackDoors}{separator}{Garmoshka}";
         }
-    }
 
+        public bool Equals(BusWithGarmoshka other)
+        {
+            if (other == null)
+            {
+                return false;
+            }
+            if (GetType().Name != other.GetType().Name)
+            {
+                return false;
+            }
+            if (MaxSpeed != other.MaxSpeed)
+            {
+                return false;
+            }
+            if (Weight != other.Weight)
+            {
+                return false;
+            }
+            if (MainColor != other.MainColor)
+            {
+                return false;
+            }
+            if (DopColor != other.DopColor)
+            {
+                return false;
+            }
+            if (BackDoors != other.BackDoors)
+            {
+                return false;
+            }
+            if (Garmoshka != other.Garmoshka)
+            {
+                return false;
+            }
+            return true;
+        }
+
+        public override bool Equals(Object obj)
+        {
+            if (obj == null)
+            {
+                return false;
+            }
+            if (!(obj is BusWithGarmoshka busObj))
+            {
+                return false;
+            }
+            else
+            {
+                return Equals(busObj);
+            }
+        }
+
+    }
 }

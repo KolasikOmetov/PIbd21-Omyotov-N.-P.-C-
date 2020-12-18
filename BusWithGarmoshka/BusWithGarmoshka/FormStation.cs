@@ -181,5 +181,15 @@ namespace BusWithGarmoshka
                 }
             }
         }
+
+        private void sortButton_Click(object sender, EventArgs e)
+        {
+            if (listBoxOfStations.SelectedIndex > -1)
+            {
+                stationCollection[listBoxOfStations.SelectedItem.ToString()].Sort();
+                Draw();
+                logger.Info("Сортировка уровней");
+            }
+        }
     }
 }

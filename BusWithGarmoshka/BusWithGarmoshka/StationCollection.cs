@@ -68,26 +68,19 @@ namespace BusWithGarmoshka
                 {
                     //Начинаем парковку
                     sw.WriteLine($"Station{separator}{level.Key}");
-                    ITransport bus = null;
-                    for (int i = 0; (bus = level.Value.GetNext(i)) != null; i++)
+                    foreach (ITransport bus in level.Value)
                     {
-                        if (bus != null)
+                        if (bus.GetType().Name == "Bus")
                         {
-                            //если место не пустое
-                            //Записываем тип машины
-                            if (bus.GetType().Name == "Bus")
-                            {
-                                sw.Write($"Bus{separator}");
-                            }
-                            if (bus.GetType().Name == "BusWithGarmoshka")
-                            {
-                                sw.Write($"BusWithGarmoshka{separator}");
-                            }
-                            //Записываемые параметры
-                            sw.WriteLine(bus);
+                            sw.Write($"Bus{separator}");
                         }
+                        if (bus.GetType().Name == "BusWithGarmoshka")
+                        {
+                            sw.Write($"BusWithGarmoshka{separator}");
+                        }
+                        //Записываемые параметры
+                        sw.WriteLine(bus);
                     }
-
                 }
             }
         }
